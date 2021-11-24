@@ -72,6 +72,22 @@ function inserccion(publicaciones,numero){
 
 }
 
+function verPublicacion() {
+    let publicacion = document.getElementById("publicacion")
+    publicacion.style.background="F5F5F5"
+    location.assign("publication.html");
+}
+
+function focoPublicacion(){
+    let color = document.getElementById("publicacion")
+    color.style.background ="#F6F5F4"
+}
+
+function fuerafocoPublicacion() {
+    let color = document.getElementById("publicacion")
+    color.style.background ="white"
+}
+
 for (let i=0;i<publicaciones.length;i++) {
     inserccion(publicaciones[i],[i+1])
 }
